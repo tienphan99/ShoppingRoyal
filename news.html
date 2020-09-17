@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <link rel="icon" href="images/favicon.ico">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/webslidemenu.css" rel="stylesheet">
+    <link href="css/webslidemenu-effect.css" rel="stylesheet">
+    <link href="css/slick.css" rel="stylesheet">
+    <link href="css/slick-theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.css">
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="css/fontawesome-all.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/css/fontawesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="box-header">
+            <div class="wsmobileheader clearfix-mobile " id="Navbar">
+                <a id="wsnavtoggle" class="wsanimated-arrow"><span></span></a>
+                <span class="smllogo"><img src="images/logos.png" alt="" /></span>
+                <div class="mobile-seacher">
+                    <a href="#" onclick="openSearch()" class="toggle-overlay"><i class="fas fa-search"></i></a>
+                </div>
+            </div>
+            <div class="block-header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                            <div class="block-header-top-contact">
+                                <div class="block-header-top-contact-mail">
+                                    <i class="fas fa-envelope-square"></i>
+                                    <span>info@royalhelmet.com.vn</span>
+                                </div>
+                                <div class="block-header-top-contact-phone">
+                                    <i class="fas fa-phone-alt"></i>
+                                    <span>03 555 11 953</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                            <div class="block-header-top-login">
+                                <i class="fas fa-sign-in-alt"></i>
+                                <a href="#">Đăng nhập</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- -------------------------------------------Block-Header-Bottom---------------------- -->
+            <div class="block-header-bottom" id="navbar">
+                <div class="container">
+                    <div class="block-header-bottom--navigation">
+                        <div class="wsmainwp clearfix clearfix-ds">
+                            <div class="logo">
+                                <a href="#">
+                                    <img src="images/logos.png" class="img-fluid" alt="Logo">
+                                </a>
+                            </div>
+                            <nav class="wsmenu clearfix">
+                                <ul class="wsmenu-list">
+                                    <li><a href="/index.html">TRANG CHỦ</a></li>
+                                    <li><a href="/introduce.html">GIỚI THIỆU</a></li>
+                                    <li><a href="/product.html">SẢN PHẨM <i class="fas fa-caret-down active"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="#">ĐÀO TẠO 1</a></li>
+                                            <li><a href="#">ĐÀO TẠO 2</a></li>
+                                            <li><a href="#">ĐÀO TẠO 3</a></li>
+                                            <li><a href="#">ĐÀO TẠO 4</a></li>
+                                            <li><a href="#">ĐÀO TẠO 5</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="/news.html" class="active">TIN TỨC </a></li>
+                                    <li><a href="/contact.html">LIÊN HỆ</a></li>
+                                    <li><a href="/contact.html">LIÊN HỆ VỚI CHÚNG TÔI</a></li>
+                                </ul>
+                            </nav>
+                            <div class="cart-seacher">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="toggle-overlay"><i class="fas fa-search"></i></a>
+                                    </li>
+                                    <li class="header-bottom-border"></li>
+                                    <li class="tooltips">
+                                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <aside>
+        <div id="myOverlay" class="overlays">
+            <div class="outer-close toggle-overlay">
+                <a class="close"><span></span></a>
+            </div>
+            <div class="overlay-content">
+                <form action="">
+                    <input type="text" placeholder="Tìm Kiếm ...." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </aside>
+    <main>
+        <!-- ------------------------Header-News-------------------------- -->
+        <section>
+            <div class="container">
+                <div class="news-headers">
+                    <h4>TIN TỨC</h4>
+                </div>
+            </div>
+        </section>
+        <!-- ----------------------------News-content----------------------- -->
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 pd-news">
+                    <div class="news-search">
+                        <div class="input-group">
+                            <input type="search" class="form-control" placeholder="Tìm Kiếm..."
+                                aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button"><i
+                                        class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category">
+                        <div class="category-top">
+                            <span>BÀI VIẾT MỚI</span>
+                            <div class="category-divider"></div>
+                            <ul class="category-table">
+                                <li>
+                                    <a href="#" class="category-product-img"><img src="images/news.jpg"
+                                            class="img-fluid" alt="Product Royal"></a>
+                                    <a href="#">SỰ KIỆN TẠI ĐẠI NAM DỊP LỄ 30/04 & 01/05</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="category-product-img"><img src="images/news-1.jpg"
+                                            class="img-fluid" alt="Product Royal"></a>
+                                    <a href="#">ĐỔI MŨ BẢO HIỂM CŨ LẤY MỚI TRỢ GIÁ 100K</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="category-product-img"><img src="images/news-2.jpg"
+                                            class="img-fluid" alt="Product Royal"></a>
+                                    <a href="#">KHÁM PHÁ NHỮNG CUNG ĐƯỜNG TREKKING</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="category-product-img"><img src="images/news-3.jpg"
+                                            class="img-fluid" alt="Product Royal"></a>
+                                    <a href="#">M134C BỨC PHÁ ĐẦY TRẺ TRUNG VÀ MẠNH MẼ</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="category-product-img"><img src="images/news-4.jpg"
+                                            class="img-fluid" alt="Product Royal"></a>
+                                    <a href="#">LỜI KHUYÊN CHO CÁC BẠN ĐI PHƯỢT</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-9 divider-news pd-news">
+                    <div class="row">
+                        <div class="col-xl-4 mb-4">
+                            <div class="card-news">
+                                <div class="img-cover">
+                                    <a href="#"><img src="images/news.jpg" class="img-fluid" alt="Cards News"></a>
+                                </div>
+                                <div class="card-body-news">
+                                    <h5><a href="#">SỰ KIỆN TẠI ĐẠI NAM DỊP LỄ 30/04 & 01/05</a></h5>
+                                    <div class="news-divider"></div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus, massa non
+                                        viverra consequat, tellus ...</p>
+                                </div>
+                            </div>
+                            <div class="badge badge-warning badges-news">
+                                <div class="badge-inner">
+                                    <span class="post-date-day">08</span><br>
+                                    <span class="post-date-month">Th3</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="card-news">
+                                <div class="img-cover">
+                                    <a href="#"><img src="images/news-1.jpg" class="img-fluid" alt="Cards News"></a>
+                                </div>
+                                <div class="card-body-news">
+                                    <h5><a href="#">ĐỔI MŨ BẢO HIỂM CŨ LẤY MỚI TRỢ GIÁ 100K</a></h5>
+                                    <div class="news-divider"></div>
+                                    <p>Donec tempus eu ligula sed blandit. Vivamus vel enim ac quam iaculis rutrum. Sed
+                                        nisi ... </p>
+                                </div>
+                            </div>
+                            <div class="badge badge-warning badges-news">
+                                <div class="badge-inner">
+                                    <span class="post-date-day">08</span><br>
+                                    <span class="post-date-month">Th3</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="card-news">
+                                <div class="img-cover">
+                                    <a href="#"><img src="images/news-2.jpg" class="img-fluid" alt="Cards News"></a>
+                                </div>
+                                <div class="card-body-news">
+                                    <h5><a href="#">KHÁM PHÁ NHỮNG CUNG ĐƯỜNG TREKKING</a></h5>
+                                    <div class="news-divider"></div>
+                                    <p>n rutrum tempus purus, ut euismod dui facilisis ac. Fusce semper dignissim diam a
+                                        egestas. ... </p>
+                                </div>
+                            </div>
+                            <div class="badge badge-warning badges-news">
+                                <div class="badge-inner">
+                                    <span class="post-date-day">08</span><br>
+                                    <span class="post-date-month">Th3</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="card-news">
+                                <div class="img-cover">
+                                    <a href="#"><img src="images/news-3.jpg" class="img-fluid" alt="Cards News"></a>
+                                </div>
+                                <div class="card-body-news">
+                                    <h5><a href="#">M134C BỨC PHÁ ĐẦY TRẺ TRUNG VÀ MẠNH MẼ</a></h5>
+                                    <div class="news-divider"></div>
+                                    <p>n rutrum tempus purus, ut euismod dui facilisis ac. Fusce semper dignissim diam a
+                                        egestas. ... </p>
+                                </div>
+                            </div>
+                            <div class="badge badge-warning badges-news">
+                                <div class="badge-inner">
+                                    <span class="post-date-day">08</span><br>
+                                    <span class="post-date-month">Th3</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="card-news">
+                                <div class="img-cover">
+                                    <a href="#"><img src="images/news-4.jpg" class="img-fluid" alt="Cards News"></a>
+                                </div>
+                                <div class="card-body-news">
+                                    <h5><a href="#">LỜI KHUYÊN CHO CÁC BẠN ĐI PHƯỢT</a></h5>
+                                    <div class="news-divider"></div>
+                                    <p>n rutrum tempus purus, ut euismod dui facilisis ac. Fusce semper dignissim diam a
+                                        egestas. ... </p>
+                                </div>
+                            </div>
+                            <div class="badge badge-warning badges-news">
+                                <div class="badge-inner">
+                                    <span class="post-date-day">08</span><br>
+                                    <span class="post-date-month">Th3</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 mb-5">
+                            <div class="card-news">
+                                <div class="img-cover">
+                                    <a href="#"><img src="images/news-5.jpg" class="img-fluid" alt="Cards News"></a>
+                                </div>
+                                <div class="card-body-news">
+                                    <h5><a href="#">ĐI PHƯỢT CẦN ĐEM THEO NHỮNG GÌ</a></h5>
+                                    <div class="news-divider"></div>
+                                    <p>n rutrum tempus purus, ut euismod dui facilisis ac. Fusce semper dignissim diam a
+                                        egestas. ... </p>
+                                </div>
+                            </div>
+                            <div class="badge badge-warning badges-news">
+                                <div class="badge-inner">
+                                    <span class="post-date-day">08</span><br>
+                                    <span class="post-date-month">Th3</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- ----------------------------Footer------------------------------------------- -->
+    <footer>
+        <!-- ----------------------------Footer-top--------------------------------------- -->
+        <section>
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Email ...">
+                                <div class="input-group-append">
+                                    <button class="btn" type="button">ĐĂNG KÝ</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                            <div class="footer-top-icon">
+                                <a href="#" class="tooltip-fb"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="tooltip-ins"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="tooltip-tw"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="tooltip-you"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- -----------------------------Footer-center-------------------------- -->
+        <section>
+            <div class="footer-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12">
+                            <div class="footer-center-header">
+                                <h4>Liên hệ</h4>
+                            </div>
+                            <div class="footer-center-content">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>319 C16 Lý Thường Kiệt, Phường 15,<p class="address"> Quận 11, Tp.HCM</p></span>
+                                <p><i class="fas fa-phone-alt"></i>
+                                    <span>076 922 0162</a></p>
+                                <p>
+                                    <i class="fas fa-envelope-open-text"></i>
+                                    <span><a href="#">demonhunterg@gmail.com
+                                        </a></span>
+                                </p>
+                                <p>
+                                    <i class="fab fa-skype"></i>
+                                    <span><a href="#">demonhunterp</a></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12">
+                            <div class="footer-center-header">
+                                <h4>Menu</h4>
+                            </div>
+                            <div class="footer-menu-center-header">
+                                <p><a href="#">Giới thiệu</a></p>
+                                <p><a href="#">Cửa hàng</a></p>
+                                <p><a href="#">Tin tức</a></p>
+                                <p><a href="#">Liên hệ</a></p>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12">
+                            <div class="footer-center-header">
+                                <h4>Tài khoản</h4>
+                            </div>
+                            <div class="footer-menu-center-header">
+                                <p><a href="#">My account</a></p>
+                                <p><a href="#">Kiểm tra đơn hàng</a></p>
+                                <p><a href="#">Thanh toán</a></p>
+                                <p><a href="#">Giỏ hàng</a></p>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12">
+                            <div class="footer-center-header">
+                                <h4>Dịch vụ</h4>
+                            </div>
+                            <div class="footer-menu-center-header">
+                                <p><a href="#">Giới thiệu</a></p>
+                                <p><a href="#">Cửa hàng</a></p>
+                                <p><a href="#">Tin tức</a></p>
+                                <p><a href="#">Liên hệ</a></p>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 signup">
+                            <div class="footer-center-header">
+                                <h4>Đăng ký</h4>
+                            </div>
+                            <div class="footer-signup-center-header">
+                                <p>Đăng ký để nhận được được thông tin mới nhất từ chúng tôi.</p>
+                                <a href="#">ĐĂNG KÝ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ---------------------------------Footer-bottom-------------------------- -->
+        <section>
+            <div class="footer-bottom">
+                <p>&copy Bản Quyền Thuộc Về . Designer Phan Văn Tiến</p>
+            </div>
+        </section>
+    </footer>
+    <!-- Bootstrap core JavaScript -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/webslidemenu.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/site.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/nouislider.js"></script>
+</body>
+
+</html>
